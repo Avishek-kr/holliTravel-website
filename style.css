@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 *:before,
 *:after {
@@ -24,6 +24,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight: normal;
 }
 h4,h5{
     font-size: 2.8rem;
@@ -32,6 +33,15 @@ a{
     text-decoration: none;
     color: white;
 }
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+/*nav section with hero*/
 .main-head{
     background: #131e27;
     color: white;
@@ -40,13 +50,14 @@ nav{
     display: flex;
     width: 90%;
     margin: auto;
-    padding: 2rem 0;
+    padding: 2rem;
     align-items: center;
     min-height: 10vh;
+    flex-wrap: wrap;
 }
 nav ul{
     display: flex;
-    flex-basis: 50%;
+    flex:1 1 40rem;
     justify-content: space-around;
 }
 
@@ -56,9 +67,63 @@ nav ul li{
 
 #logo{
     display: flex;
-    flex-basis: 60%;
+   flex:1 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: normal;
 }
 
 .hero{
-    min-height: 90vh;
+    min-height: 88.8vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent ),url(img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.hero h3{
+    padding: 5rem;
+}
+
+@media screen and (max-width:932px){
+    html{
+        font-size: 45%;
+    }
+    #logo{
+        padding: 1rem;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
